@@ -23,7 +23,7 @@
 
 <body class="w3-light-grey">
 
-    <div class="w3-bar w3-dark-grey">
+    <div class="w3-bar w3-dark-grey w3-large">
         <a href="./index.html" class="w3-bar-item w3-button">Home</a>
         <a href="./about_reviews.html" class="w3-bar-item w3-button w3-hide-small">Reviews</a>
         <a href="./about_services.html" class="w3-bar-item w3-button w3-hide-small">Services</a>
@@ -31,10 +31,10 @@
         <a href="./about_site.html" class="w3-bar-item w3-button w3-hide-small">About</a>        
         <a href="#" class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fa fa-search"></i></a>
         <input type="text" class="w3-bar-item w3-input w3-right w3-hide-small" placeholder="Search..">
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="onHamburgerClick()">&#9776;</a>
     </div>
 
-    <div id="demo" class="w3-bar-block w3-dark-grey w3-hide w3-hide-large w3-hide-medium">
+    <div id="hiddenMobile" class="w3-bar-block w3-dark-grey w3-hide w3-hide-large w3-hide-medium">
         <a href="./about_reviews.html" class="w3-bar-item w3-button">Reviews</a>
         <a href="./about_services.html" class="w3-bar-item w3-button">Services</a>
         <a href="./about_archive.html" class="w3-bar-item w3-button">Archives</a>
@@ -190,8 +190,8 @@
     </footer>
 
     <script>
-function myFunction() {
-  var x = document.getElementById("demo");
+function onHamburgerClick() {
+  var x = document.getElementById("hiddenMobile");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else { 
